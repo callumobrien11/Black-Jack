@@ -1,0 +1,24 @@
+h1 {
+    text-align: center;
+}
+
+#restart-game {
+    text-align: center;
+    margin: auto;
+    display: flex;
+}
+
+.card {
+    text-align: center;
+    margin: 50px;
+}
+
+#bet, #hit, #stand {
+    margin: 30px;
+    padding: 15px;
+    font-size: 25px;
+}
+
+body {
+    background-color: darkcyan;
+}

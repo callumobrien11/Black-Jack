@@ -80,8 +80,8 @@ let playerCard5 = document.getElementById("player-card-5");
 let restartGame = document.getElementById("restart-game");
 let displayWinner = document.getElementById("display-winner");
 
-hitBtn.disabled = true;
-standBtn.disabled = true;
+// hitBtn.disabled = true;
+// standBtn.disabled = true;
 
 // event listeners
 betBtn.addEventListener("click", betClick);
@@ -95,7 +95,22 @@ let dealerHandValue = 0;
 // functions
 
 function restartClick () {
-    
+    dealerHand = []
+    playerHand = []
+    playerHandValue = 0
+    dealerHandValue = 0
+    displayWinner.innerHTML = ""
+    playerCard1.className = "card"
+    playerCard2.className = "card"
+    playerCard3.className = "card"
+    playerCard4.className = "card"
+    playerCard5.className = "card"
+    dealerCard1.className = "card"
+    dealerCard2.className = "card"
+    dealerCard3.className = "card"
+    dealerCard4.className = "card"
+    dealerCard5.className = "card"
+    betBtn.disabled = false
 }
 
 function betClick() {
